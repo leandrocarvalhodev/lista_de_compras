@@ -1,38 +1,42 @@
-#Projeto Lista de Compras - Utilizado no Curso Objetos no JavaScript - Escola Front-End Alura
+# 🛒 Lista de Compras com JavaScript
 
-Neste arquivo encontram-se modelos de códigos que serão utilizados no decorrer do curso. 
+Este projeto é uma aplicação simples de **lista de compras**, desenvolvida com HTML, CSS e JavaScript, com persistência de dados utilizando a **API `localStorage`** do navegador.
 
-Código modelo da li "Comprados":
+## ✅ Funcionalidades
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" checked class="is-clickable" />  
-            <span class="itens-comprados is-size-5"></span>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+- ✍️ Adicionar novos itens à lista
+- ✅ Marcar itens como **comprados**
+- 📝 Editar itens já adicionados
+- ❌ Excluir itens da lista
+- 📦 Os itens são **salvos localmente** no navegador usando `localStorage`, mesmo que a página seja atualizada
 
-Código modelo da li "Lista de compras": 
+## 🧠 Objetivo do Projeto
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" class="is-clickable" />
-            <input type="text" class="is-size-5" value=""></input>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+O objetivo principal deste projeto é praticar:
 
-Input com código refatorado:
+- Manipulação do **DOM**
+- Manipulação de **eventos**
+- Utilização do **localStorage** para armazenar dados localmente
+- Criação de listas dinâmicas com interações em tempo real
+- Separação visual entre **Lista de compras** e **Comprados**
 
-    <div>
-        <input type="checkbox" checked class="is-clickable" />  
-        <span class="itens-comprados is-size-5">${elemento.valor}</span>
-    </div>
+## 🧪 Tecnologias Utilizadas
 
-Ícones de edição:
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **localStorage API**
 
-    <i class="fa-regular fa-floppy-disk is-clickable"></i><i class="fa-regular is-clickable fa-pen-to-square editar"></i>
+## 💡 Como funciona
+
+1. O usuário digita o nome de um item e clica em **"Adicionar"**
+2. O item aparece na lista de compras
+3. É possível:
+   - Marcar como **comprado** → o item vai para a lista de "comprados"
+   - **Editar** o nome do item
+   - **Excluir** permanentemente
+4. Todos os dados são armazenados no navegador, mantendo a lista mesmo após fechar ou recarregar a página
+
+---
+
+🎯 Ideal para quem está começando com JavaScript e quer treinar lógica, interatividade e persistência de dados no front-end!
